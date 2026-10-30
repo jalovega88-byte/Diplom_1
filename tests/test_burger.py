@@ -6,10 +6,15 @@ import pytest
 from praktikum.burger import Burger
 
 
-def test_burger_initialization():
+def test_burger_initialization_without_bun():
     burger = Burger()
 
     assert burger.bun is None
+
+
+def test_burger_initialization_without_ingredients():
+    burger = Burger()
+
     assert burger.ingredients == []
 
 
